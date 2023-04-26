@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../../../assets/logo.png';
 import moment from 'moment';
-import { Button, Container, Form, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 import UserIcon from '../../../assets/user.png';
 
@@ -19,11 +19,11 @@ const Header = () => {
       </div>
       
       {/* Navbar */}
-      <Navbar className='bg-white fs-5' bg="light" expand="lg">
+      <Navbar className='bg-white fs-5 mb-5' bg="light" expand="lg">
         <Container className='px-0' fluid>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="mx-auto my-2 my-lg-0 fw-medium" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav className="mx-auto my-2 my-lg-0 fw-semibold" style={{ maxHeight: '100px' }} navbarScroll>
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
               <Nav.Link href="#action3">Career</Nav.Link>
