@@ -30,7 +30,7 @@ const Header = () => {
             </Nav>
             <Form className="d-flex gap-3">
               <img src={UserIcon} alt="User Icon" />
-              <Button variant="secondary w_120">Login</Button>
+              <Button className='px-5' variant="secondary">Login</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
