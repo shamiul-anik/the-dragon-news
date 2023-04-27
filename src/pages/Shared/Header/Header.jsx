@@ -13,7 +13,7 @@ const Header = () => {
         <p className='text-secondary mt-3 fs-6'>Journalism Without Fear or Favour</p>
         <p className='text-secondary fw-bold fs-5'>{moment().format("dddd, MMMM DD, YYYY")}</p>
       </div>
-      <div className='d-flex my-3 bg-secondary bg-opacity-10 p-3'>
+      <div className='d-flex gap-3 my-3 bg-secondary bg-opacity-10 p-3'>
         <Button variant='danger'>Latest</Button>
         <Marquee className='fs-5 fw-bold' pauseOnHover={true} speed={80}>Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...</Marquee>
       </div>
