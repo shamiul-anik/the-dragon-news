@@ -1,6 +1,6 @@
 # The Dragon News
 
-## GitHub Web Site Server Sie Code Link: 
+## GitHub Code Link: (Server Side)
 https://github.com/shamiul-anik/the-dragon-news-server
 
 ## Live Website Link:
