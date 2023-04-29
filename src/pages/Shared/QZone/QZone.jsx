@@ -1,7 +1,7 @@
 import React from 'react';
-import QZone1 from '../../../assets/qZone1.png';
-import QZone2 from '../../../assets/qZone2.png';
-import QZone3 from '../../../assets/qZone3.png';
+import QZone1 from '../../../assets/img/qZone1.png';
+import QZone2 from '../../../assets/img/qZone2.png';
+import QZone3 from '../../../assets/img/qZone3.png';
 
 const QZone = () => {
   return (

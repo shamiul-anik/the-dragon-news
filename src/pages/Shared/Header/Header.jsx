@@ -1,9 +1,9 @@
 import React from 'react';
-import Logo from '../../../assets/logo.png';
+import Logo from '../../../assets/img/logo.png';
 import moment from 'moment';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import UserIcon from '../../../assets/user.png';
+import UserIcon from '../../../assets/img/user.png';
 
 const Header = () => {
   return (
@@ -24,9 +24,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto my-2 my-lg-0 fw-semibold" style={{ maxHeight: '100px' }} navbarScroll>
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#action3">Career</Nav.Link>
+              <Nav.Link to="/">Home</Nav.Link>
+              <Nav.Link to="/about">About</Nav.Link>
+              <Nav.Link to="career">Career</Nav.Link>
             </Nav>
             <Form className="d-flex gap-3">
               <img src={UserIcon} alt="User Icon" />

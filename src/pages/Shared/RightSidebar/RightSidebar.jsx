@@ -3,7 +3,7 @@ import { Button, ListGroup } from 'react-bootstrap';
 import { FaGoogle, FaGithub, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import QZone from '../QZone/QZone';
-import BackgroundImage from '../../../assets/bg.png';
+import BackgroundImage from '../../../assets/img/bg.png';
 
 const RightSidebar = () => {
   return (
