@@ -9,7 +9,7 @@ const RightSidebar = () => {
   return (
     <>
 			<div>
-				<h3 className='fw-bold fs-5'>Login with</h3>
+				<h3 className='fw-bolder fs-5'>Login with</h3>
 				<Button className='mt-2 w-100 fw-semibold' variant="outline-primary"> <FaGoogle /> Login with Google</Button>
 				<Button className='mt-2 w-100 fw-semibold' variant="outline-secondary"><FaGithub /> Login with GitHub</Button>
 			</div>
