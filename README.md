@@ -28,7 +28,7 @@ https://dragon-news-shamiul.netlify.app/
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <td style="text-align: center">1</td>
       <td>React Bootstrap</td>
       <td>https://react-bootstrap.netlify.app</td>
     </tr>
