@@ -7,16 +7,33 @@ https://github.com/shamiul-anik/the-dragon-news-server
 https://dragon-news-shamiul.netlify.app/
 
 ## Packages/Services/Font Used:
-1. React Bootstrap: https://react-bootstrap.netlify.app/
-2. Moment JS: https://momentjs.com/
-3. React Fast Marquee: https://www.react-fast-marquee.com/
-4. React Icons: https://react-icons.github.io/react-icons/
+1. React Bootstrap: https://react-bootstrap.netlify.app
+2. Moment JS: https://momentjs.com
+3. React Fast Marquee: https://www.react-fast-marquee.com
+4. React Icons: https://react-icons.github.io/react-icons
 5. React Rating: https://www.npmjs.com/package/react-rating
 6. React Router: https://reactrouter.com/en/main
-7. Firebase: https://firebase.google.com/
+7. Firebase: https://firebase.google.com
 8. Google Font: https://fonts.google.com/specimen/Poppins
 9. 
 10. 
+
+<table>
+  <thead>
+    <tr>
+      <th>Serial No.</th>
+      <th>Name</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>React Bootstrap</td>
+      <td>https://react-bootstrap.netlify.app</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Best Features of this Project:
 1. 
