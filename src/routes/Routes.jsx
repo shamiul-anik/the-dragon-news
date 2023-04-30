@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home/Home";
 import Category from "../pages/Category/Category";
 import NewsLayout from "../layouts/NewsLayout";
-import News from "../layouts/NewsLayout";
+import News from "../pages/News/News";
 
 export const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
     element: <NewsLayout></NewsLayout>,
     children: [
       {
-        path: "/news/:id",
+        path: ":id",
         element: <News></News>
       }
     ]

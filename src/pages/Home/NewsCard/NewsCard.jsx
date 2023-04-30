@@ -2,9 +2,9 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FaStar, FaStarHalf, FaRegBookmark, FaShareAlt } from 'react-icons/fa';
-import { GrView } from "react-icons/gr";
+import { FaStar, FaRegStar, FaStarHalf, FaRegBookmark, FaShareAlt, FaEye } from 'react-icons/fa';
 import moment from 'moment';
+import Rating from 'react-rating';
 
 const NewsCard = ({ news }) => {
 
@@ -34,16 +34,26 @@ const NewsCard = ({ news }) => {
           {details.length < 300 ? details : details.slice(0, 300)}... 
         </Card.Text>
         <Card.Text>
-          <Link className='text-info fw-bold text-decoration-none'>Read More</Link>
+          <Link to={`/news/${_id}`} className='text-info fw-bold text-decoration-none'>Read More</Link>
         </Card.Text>
         <hr />
         <div className='d-flex justify-content-between align-items-center text-secondary fw-semibold'>
           <div className='d-flex align-items-center gap-2'> 
-            {rating.number < 5 ? <FaStarHalf className='text-warning' /> : <FaStar className='text-warning' />}
-            {rating.number}
+            <div>
+              <Rating
+                placeholderRating={rating?.number}
+                emptySymbol={<FaRegStar className='text-warning' />}
+                placeholderSymbol={<FaStar className='text-warning' />}
+                fullSymbol={<FaStar className='text-warning' />}
+                readonly
+              />
+            </div>
+            <div>
+              {rating?.number}
+            </div>
           </div>
           <div className='d-flex align-items-center gap-2'> 
-            <GrView />
+            <FaEye className='fs-6' />
             {total_view} 
           </div>
         </div>

@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
-import './LeftSidebar.css';
+import { Card, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import './LeftSidebar.css';
+import firstImage from '../../../assets/img/1.png';
+import secondImage from '../../../assets/img/2.png';
+import thirdImage from '../../../assets/img/3.png';
+import { FaRegCalendar } from 'react-icons/fa';
 
 const LeftSidebar = () => {
 
@@ -31,6 +35,44 @@ const LeftSidebar = () => {
 						}
 					</Nav>
 				</Navbar>
+
+				{/* Cards */}
+				<div className='d-flex flex-column gap-4'>
+					<Card>
+						<Card.Img variant="top" src={firstImage} alt='First Image' />
+						<Card.Body>
+							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
+								<p className='fw-bold mb-0 me-3'>Sports</p>
+								<FaRegCalendar />
+								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+					<Card>
+						<Card.Img variant="top" src={secondImage} alt='Second Image' />
+						<Card.Body>
+							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
+								<p className='fw-bold mb-0 me-3'>Sports</p>
+								<FaRegCalendar />
+								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+					<Card>
+						<Card.Img variant="top" src={thirdImage} alt='Third Image' />
+						<Card.Body>
+							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
+								<p className='fw-bold mb-0 me-3'>Sports</p>
+								<FaRegCalendar />
+								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</div>
+				
 			</div>
 		</div>
 	);

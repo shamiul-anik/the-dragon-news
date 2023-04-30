@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../../../assets/img/logo.png';
 import moment from 'moment';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
@@ -6,6 +6,17 @@ import Marquee from "react-fast-marquee";
 import UserIcon from '../../../assets/img/user.png';
 
 const Header = () => {
+
+  // const [news, setNews] = useState([]);
+  // const { others_info } = news;
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/news")
+  //     .then(res => res.json())
+  //     .then(data => setNews(data))
+  //     .catch(error => console.error(error));
+  // }, []);
+
   return (
     <Container>
       <div className='text-center mt-5 mb-3'>
@@ -15,7 +26,10 @@ const Header = () => {
       </div>
       <div className='d-flex gap-3 my-3 bg-secondary bg-opacity-10 p-3'>
         <Button variant='danger'>Latest</Button>
-        <Marquee className='fs-5 fw-bold' pauseOnHover={true} speed={80}>Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...</Marquee>
+        <Marquee className='fs-5 fw-bold' pauseOnHover={true} speed={80}>
+          Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
+          {/* {news.find( n => others_info.is_todays_pick)} */}
+        </Marquee>
       </div>
       
       {/* Navbar */}

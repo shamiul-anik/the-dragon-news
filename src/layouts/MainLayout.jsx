@@ -6,7 +6,7 @@ import LeftSidebar from '../pages/Shared/LeftSidebar/LeftSidebar';
 import RightSidebar from '../pages/Shared/RightSidebar/RightSidebar';
 import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+const MainLayout = () => {
   return (
     <div>
       <Header></Header>
@@ -28,4 +28,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainLayout;

@@ -5,7 +5,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import RightSidebar from '../pages/Shared/RightSidebar/RightSidebar';
 import { Outlet } from 'react-router-dom';
 
-const News = () => {
+const NewsLayout = () => {
   return (
     <div>
       <Header></Header>
@@ -24,4 +24,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default NewsLayout;
