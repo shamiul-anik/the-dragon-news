@@ -4,11 +4,13 @@ import Home from "../pages/Home/Home/Home";
 import Category from "../pages/Category/Category";
 import NewsLayout from "../layouts/NewsLayout";
 import News from "../pages/News/News";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -24,6 +26,7 @@ export const router = createBrowserRouter([
   {
     path: "/news",
     element: <NewsLayout></NewsLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: ":id",

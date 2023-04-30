@@ -66,11 +66,16 @@ https://dragon-news-shamiul.netlify.app/
       <td>Google Font</td>
       <td>https://fonts.google.com/specimen/Poppins</td>
     </tr>
+    <tr>
+      <td>9</td>
+      <td>Lottie React</td>
+      <td>https://www.npmjs.com/package/lottie-react</td>
+    </tr>
   </tbody>
 </table>
 
 ### Best Features of this Project:
-1. 
+<!-- 1. 
 2. 
 3. 
 4. 
@@ -84,4 +89,4 @@ https://dragon-news-shamiul.netlify.app/
 12. 
 13. 
 14. 
-15. 
+15.  -->
