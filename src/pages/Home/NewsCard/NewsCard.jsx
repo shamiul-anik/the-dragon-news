@@ -11,7 +11,7 @@ const NewsCard = ({ news }) => {
   const { _id, title, author, details, rating, total_view, image_url, thumbnail_url } = news;
   
   return (
-    <Card className="mb-4">
+    <Card className="mb-4 me-2">
       <Card.Header className='d-flex align-items-center justify-content-between py-3'>
         <div className='d-flex align-items-center gap-2'>
           <div>

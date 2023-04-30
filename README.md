@@ -6,7 +6,7 @@ https://github.com/shamiul-anik/the-dragon-news-server
 ## Live Website Link:
 https://dragon-news-shamiul.netlify.app/
 
-## Packages/Services Used:
+## Packages/Services/Font Used:
 1. React Bootstrap: https://react-bootstrap.netlify.app/
 2. Moment JS: https://momentjs.com/
 3. React Fast Marquee: https://www.react-fast-marquee.com/
@@ -14,7 +14,7 @@ https://dragon-news-shamiul.netlify.app/
 5. React Rating: https://www.npmjs.com/package/react-rating
 6. React Router: https://reactrouter.com/en/main
 7. Firebase: https://firebase.google.com/
-8. 
+8. Google Font: @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
 9. 
 10. 
 

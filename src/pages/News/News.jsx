@@ -9,6 +9,7 @@ import editorsInsightImage3 from '../../assets/img/editorsInsight3.png';
 const News = () => {
 
 	const news = useLoaderData();
+
 	const { category_id, title, details, image_url } = news;
 
 	return (
@@ -28,7 +29,7 @@ const News = () => {
 			<h3 className='fw-bolder mt-4 mb-3 fs-4'>Editors Insight</h3>
 			<Row xs={1} md={2} lg={3} className="g-4">
 				<Col>
-					<Card>
+					<Card className='shadow-sm'>
 						<Card.Img variant="top" src={editorsInsightImage1} alt='Editors Insight Image 1' />
 						<Card.Body>
 							<Card.Title className='fw-bold'>21 The Most Stylish Wedding Guest Dresses For Spring</Card.Title>

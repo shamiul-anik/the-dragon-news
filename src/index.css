@@ -1,17 +1,47 @@
-/* Custom Width */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Scrollbar CSS Start ===== */
+/* Firefox */
+ * {
+    scrollbar-width: auto;
+    scrollbar-color: #949ba2 #cbd1d6;
+} 
+
+/* Chrome, Edge, and Safari */
+ *::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+} 
+
+*::-webkit-scrollbar-track {
+  background: #e3e6e8;
+} 
+
+*::-webkit-scrollbar-thumb {
+  background: #cbd1d6;
+  background: linear-gradient(90deg, #bfc5ca 0%, #a2a8ac 61%, #949a9e 100%);
+  border-radius: 10px;
+}
+/* ===== Scrollbar CSS End ===== */
+
+/* Custom Width and Height */
 .w_120 {
   width: 120px;
 }
 
-.text-justify {
-  text-align: justify;
-}
-
-/* Image Size */
 .h-10 {
   height: 40px;
 }
 
 .w-10 {
   width: 40px;
+}
+
+.text-justify {
+  text-align: justify;
 }
