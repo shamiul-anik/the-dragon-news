@@ -1,4 +1,5 @@
 # The Dragon News
+![The Dragon News](src/assets/img/logo.png)
 
 ## GitHub Code Link: (Server Side)
 https://github.com/shamiul-anik/the-dragon-news-server
