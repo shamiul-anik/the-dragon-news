@@ -7,16 +7,14 @@ https://github.com/shamiul-anik/the-dragon-news-server
 https://dragon-news-shamiul.netlify.app/
 
 ## Packages/Services/Font Used:
-1. React Bootstrap: https://react-bootstrap.netlify.app
+<!-- 1. React Bootstrap: https://react-bootstrap.netlify.app
 2. Moment JS: https://momentjs.com
 3. React Fast Marquee: https://www.react-fast-marquee.com
 4. React Icons: https://react-icons.github.io/react-icons
 5. React Rating: https://www.npmjs.com/package/react-rating
 6. React Router: https://reactrouter.com/en/main
 7. Firebase: https://firebase.google.com
-8. Google Font: https://fonts.google.com/specimen/Poppins
-9. 
-10. 
+8. Google Font: https://fonts.google.com/specimen/Poppins -->
 
 <table>
   <thead>
@@ -28,9 +26,44 @@ https://dragon-news-shamiul.netlify.app/
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">1</td>
+      <td>1</td>
       <td>React Bootstrap</td>
       <td>https://react-bootstrap.netlify.app</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Moment JS</td>
+      <td>https://momentjs.com</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>React Fast Marquee</td>
+      <td>https://www.react-fast-marquee.com</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>React Icons</td>
+      <td>https://react-icons.github.io/react-icons</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>React Rating</td>
+      <td>https://www.npmjs.com/package/react-rating</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>React Router</td>
+      <td>https://reactrouter.com/en/main</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Firebase</td>
+      <td>https://firebase.google.com</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Google Font</td>
+      <td>https://fonts.google.com/specimen/Poppins</td>
     </tr>
   </tbody>
 </table>
