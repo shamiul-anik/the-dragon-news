@@ -41,33 +41,33 @@ const LeftSidebar = () => {
 					<Card>
 						<Card.Img variant="top" src={firstImage} alt='First Image' />
 						<Card.Body>
-							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Title className='fw-bold'>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
 							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
-								<p className='fw-bold mb-0 me-3'>Sports</p>
-								<FaRegCalendar />
-								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+								<span className='fw-bold mb-0 me-3'>Sports</span>
+								<FaRegCalendar className='text-secondary' />
+								<span className='text-secondary mb-0'>Jan 4, 2022</span>
 							</Card.Text>
 						</Card.Body>
 					</Card>
 					<Card>
 						<Card.Img variant="top" src={secondImage} alt='Second Image' />
 						<Card.Body>
-							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Title className='fw-bold'>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
 							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
-								<p className='fw-bold mb-0 me-3'>Sports</p>
-								<FaRegCalendar />
-								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+								<span className='fw-bold mb-0 me-3'>Sports</span>
+								<FaRegCalendar className='text-secondary' />
+								<span className='text-secondary mb-0'>Jan 4, 2022</span>
 							</Card.Text>
 						</Card.Body>
 					</Card>
 					<Card>
 						<Card.Img variant="top" src={thirdImage} alt='Third Image' />
 						<Card.Body>
-							<Card.Title>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
+							<Card.Title className='fw-bold'>Bayern Slams Authorities Over Flight Delay to Club World Cup</Card.Title>
 							<Card.Text className='d-flex align-items-center gap-2 mt-3'>
-								<p className='fw-bold mb-0 me-3'>Sports</p>
-								<FaRegCalendar />
-								<p className='text-secondary mb-0'>Jan 4, 2022</p>
+								<span className='fw-bold mb-0 me-3'>Sports</span>
+								<FaRegCalendar className='text-secondary' />
+								<span className='text-secondary mb-0'>Jan 4, 2022</span>
 							</Card.Text>
 						</Card.Body>
 					</Card>
