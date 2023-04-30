@@ -26,6 +26,12 @@ body {
   background: #cbd1d6;
   background: linear-gradient(90deg, #bfc5ca 0%, #a2a8ac 61%, #949a9e 100%);
   border-radius: 10px;
+  transition: all 0.3s;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #cbd1d6;
+  background: linear-gradient(90deg, #989da0 0%, #888e92 61%, #858b8f 100%);
 }
 /* ===== Scrollbar CSS End ===== */
 
