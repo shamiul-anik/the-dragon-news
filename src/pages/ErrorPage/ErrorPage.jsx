@@ -8,7 +8,6 @@ import { FaArrowCircleLeft } from 'react-icons/fa';
 const ErrorPage = () => {
 
   const error = useRouteError();
-  console.log(error);
 
   return (
     <div className="flex flex-col justify-content-center align-items-center text-center w-50 h-100 mx-auto">
