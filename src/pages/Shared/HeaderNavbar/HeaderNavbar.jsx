@@ -15,7 +15,7 @@ const HeaderNavbar = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="d-flex gap-4 mx-auto fw-semibold" navbarScroll>
-              <NavLink className='header-navlink text-decoration-none text-secondary' to="/">Home</NavLink>
+              <NavLink className='header-navlink text-decoration-none text-secondary' to="/category/0">Home</NavLink>
               <NavLink className='header-navlink text-decoration-none text-secondary' to="/about">About</NavLink>
               <NavLink className='header-navlink text-decoration-none text-secondary' to="/career">Career</NavLink>
             </Nav>
@@ -32,7 +32,7 @@ const HeaderNavbar = () => {
                 user ?
                   <Button className='px-4 py-2' variant="danger">Logout</Button> :
                   <Link to='/login'>
-                    <Button className='px-4 py-2' variant="success">Login</Button>
+                    <Button className='px-4 py-2' variant="secondary">Login</Button>
                   </Link>
               }
             </Form>
