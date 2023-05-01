@@ -1,65 +1,70 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 /* ===== Scrollbar CSS Start ===== */
 /* Firefox */
- * {
-    scrollbar-width: auto;
-    scrollbar-color: #949ba2 #cbd1d6;
-} 
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #949ba2 #cbd1d6;
+}
 
 /* Chrome, Edge, and Safari */
- *::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-} 
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
 
 *::-webkit-scrollbar-track {
-  background: #e3e6e8;
-} 
+	background: #e3e6e8;
+}
 
 *::-webkit-scrollbar-thumb {
-  background: #cbd1d6;
-  background: linear-gradient(90deg, #bfc5ca 0%, #a2a8ac 61%, #949a9e 100%);
-  border-radius: 10px;
-  transition: all 0.3s;
+	background: #cbd1d6;
+	background: linear-gradient(90deg, #bfc5ca 0%, #a2a8ac 61%, #949a9e 100%);
+	border-radius: 10px;
+	transition: all 0.3s;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: #cbd1d6;
-  background: linear-gradient(90deg, #989da0 0%, #888e92 61%, #858b8f 100%);
+	background: #cbd1d6;
+	background: linear-gradient(90deg, #989da0 0%, #888e92 61%, #858b8f 100%);
 }
 /* ===== Scrollbar CSS End ===== */
 
 /* Custom Width and Height */
 .w_120 {
-  width: 120px;
+	width: 120px;
 }
 
 .h-10 {
-  height: 40px;
+	height: 40px;
 }
 
 .w-10 {
-  width: 40px;
+	width: 40px;
 }
 
 .text-justify {
-  text-align: justify;
+	text-align: justify;
 }
 
 /* Header Nav Link */
 .header-navlink:hover {
-  text-decoration: underline !important;
-  text-underline-offset: 3px;
+	text-decoration: underline !important;
+	text-underline-offset: 3px;
 }
 
 .header-navlink.active {
-  font-weight: bold;
-  text-decoration: underline !important;
-  text-underline-offset: 3px;
+	font-weight: bold;
+	text-decoration: underline !important;
+	text-underline-offset: 3px;
+}
+
+/* Button Active Border Remove */
+.btn:active {
+	border-color: transparent !important;
 }
