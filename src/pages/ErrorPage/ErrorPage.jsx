@@ -17,7 +17,9 @@ const ErrorPage = () => {
         <i className="text-danger">{error?.message}</i>
       </p>
       <div className="mt-5">
-        <Link to="/"><Button className='px-3 py-2 fs-5 fw-bold' variant="primary"><FaArrowCircleLeft className='fs-5 me-1' /> Back to Main</Button></Link>
+        <Link to="/">
+          <Button className='px-3 py-2 fs-5 fw-bold' variant="secondary"><FaArrowCircleLeft className='fs-5 me-1' /> Back to Main</Button>
+        </Link>
       </div>
     </div>
   );
