@@ -51,3 +51,15 @@ body {
 .text-justify {
   text-align: justify;
 }
+
+/* Header Nav Link */
+.header-navlink:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}
+
+.header-navlink.active {
+  font-weight: bold;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+}

@@ -16,7 +16,7 @@ const News = () => {
 		<div>
 			<h3 className='fw-bolder mb-3 fs-5'>Dragon News</h3>
 			<Card className='p-4 shadow-sm'>
-				<Card.Img variant="top" src={image_url} />
+				<Card.Img variant="top" src={image_url} alt='Card Image'/>
 				<Card.Body className='p-0'>
 					<Card.Title className='fs-4 fw-bolder text-justify lh-base mt-3'>{ title }</Card.Title>
 					<Card.Text className='text-secondary text-justify'>{ details }</Card.Text>

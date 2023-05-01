@@ -4,6 +4,7 @@ import moment from 'moment';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
 import UserIcon from '../../../assets/img/user.png';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -37,10 +38,10 @@ const Header = () => {
         <Container className='px-0' fluid>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="mx-auto my-2 my-lg-0 fw-semibold" style={{ maxHeight: '100px' }} navbarScroll>
-              <Nav.Link to="/">Home</Nav.Link>
-              <Nav.Link to="/about">About</Nav.Link>
-              <Nav.Link to="career">Career</Nav.Link>
+            <Nav className="d-flex gap-4 mx-auto fw-semibold" navbarScroll>
+              <NavLink className='header-navlink text-decoration-none text-secondary' to="/">Home</NavLink>
+              <NavLink className='header-navlink text-decoration-none text-secondary' to="/about">About</NavLink>
+              <NavLink className='header-navlink text-decoration-none text-secondary' to="/career">Career</NavLink>
             </Nav>
             <Form className="d-flex gap-3">
               <img src={UserIcon} alt="User Icon" />
