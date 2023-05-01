@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Logo from '../../../assets/img/logo.png';
 import moment from 'moment';
-import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import Marquee from "react-fast-marquee";
-import UserIcon from '../../../assets/img/user.png';
-import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-
-  // const [news, setNews] = useState([]);
-  // const { others_info } = news;
-
-  // useEffect(() => {
-  //   fetch("http://localhost:5000/news")
-  //     .then(res => res.json())
-  //     .then(data => setNews(data))
-  //     .catch(error => console.error(error));
-  // }, []);
 
   return (
     <Container>
@@ -32,24 +20,6 @@ const Header = () => {
           {/* {news.find( n => others_info.is_todays_pick)} */}
         </Marquee>
       </div>
-      
-      {/* Navbar */}
-      <Navbar className='bg-white fs-5 mb-5' bg="light" expand="lg">
-        <Container className='px-0' fluid>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="d-flex gap-4 mx-auto fw-semibold" navbarScroll>
-              <NavLink className='header-navlink text-decoration-none text-secondary' to="/">Home</NavLink>
-              <NavLink className='header-navlink text-decoration-none text-secondary' to="/about">About</NavLink>
-              <NavLink className='header-navlink text-decoration-none text-secondary' to="/career">Career</NavLink>
-            </Nav>
-            <Form className="d-flex gap-3">
-              <img src={UserIcon} alt="User Icon" />
-              <Button className='px-5' variant="secondary">Login</Button>
-            </Form>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
     </Container>
   );
 };
