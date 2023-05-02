@@ -51,7 +51,7 @@ const Login = () => {
 						<Form.Control
 							required
 							name="password"
-							type={showPassword ? "text" : "password" }
+							type={showPassword ? "text" : "password"}
 							placeholder="Enter your password"
 							aria-label="Password"
 							aria-describedby="password"
