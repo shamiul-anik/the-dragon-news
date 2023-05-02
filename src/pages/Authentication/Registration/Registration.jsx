@@ -24,29 +24,57 @@ const Registration = () => {
 
   return (
     <Container className='bg-white shadow w-25 rounded p-5 my-auto'>
-      <h4 className='text-center fs-4 fw-bold mt-3 mb-4'>Register your account</h4>
+      <h4 className='text-center fs-4 fw-bold mb-4'>Register your account</h4>
 
       <hr className='text-secondary my-4' />
 
       <Form noValidate validated={validated} onSubmit={handleSubmit}>
 
-        <Form.Group as={Col} controlId="validationCustomEmail">
+        <Form.Group as={Col} controlId="validateCustomName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            required
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            defaultValue=""
+          />
+          {/* <Form.Control.Feedback>You must enter your email address.</Form.Control.Feedback> */}
+          <Form.Control.Feedback type="invalid">You must enter your name.</Form.Control.Feedback>
+        </Form.Group>
+        
+        <Form.Group className='mt-3' as={Col} controlId="validateCustomPhotoURL">
+          <Form.Label>Photo URL</Form.Label>
+          <Form.Control
+            required
+            name="photo"
+            type="text"
+            placeholder="Enter your photo url"
+            defaultValue=""
+          />
+          {/* <Form.Control.Feedback>You must enter your email address.</Form.Control.Feedback> */}
+          <Form.Control.Feedback type="invalid">You must enter a valid photo url.</Form.Control.Feedback>
+        </Form.Group>
+        
+        <Form.Group className='mt-3' as={Col} controlId="validateCustomEmail">
           <Form.Label>Email</Form.Label>
           <Form.Control
             required
-            type="text"
+            name="email"
+            type="email"
             placeholder="Enter your email address"
             defaultValue=""
           />
           {/* <Form.Control.Feedback>You must enter your email address.</Form.Control.Feedback> */}
-          <Form.Control.Feedback type="invalid">You must enter your email address.</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid">You must enter a valid email address.</Form.Control.Feedback>
         </Form.Group>
 
-        <Form.Group className='mt-4' as={Col} controlId="validationCustomPassword">
+        <Form.Group className='mt-3' as={Col} controlId="validateCustomPassword">
           <Form.Label>Password</Form.Label>
           <InputGroup className="mb-3">
             <Form.Control
               required
+              name="password"
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
               aria-label="Password"
@@ -62,21 +90,14 @@ const Registration = () => {
           </InputGroup>
         </Form.Group>
         <Form.Group className="mb-3 mt-4">
-          {/* <Form.Check
-						required
-						label="Accept Terms & Conditions"
-						feedback=""
-						feedbackType="invalid"
-					/> */}
-
           <Form.Check type='checkbox' id='acceptTerms'>
-            <Form.Check.Input type='checkbox' feedbackType="invalid" />
+            <Form.Check.Input type='checkbox' feedbackType="invalid" required />
             <Form.Check.Label>Accept Terms & Conditions</Form.Check.Label>
           </Form.Check>
         </Form.Group>
         <Button variant='secondary' className='w-100 py-2 mb-4' type="submit">Register</Button>
 
-        <p className='text-center'>
+        <p className='text-center mb-0'>
           <Form.Text id="noAccount" muted>
             Already have an account? <Link to='/login'>Login</Link>
           </Form.Text>

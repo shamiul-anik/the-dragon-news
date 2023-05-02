@@ -26,29 +26,31 @@ const Login = () => {
 	return (
 		
 		<Container className='bg-white shadow w-25 rounded p-5 my-auto'>
-			<h4 className='text-center fs-4 fw-bold mt-3 mb-4'>Login your account</h4>
+			<h4 className='text-center fs-4 fw-bold mb-4'>Login your account</h4>
 
 			<hr className='text-secondary my-4' />
 
 			<Form noValidate validated={validated} onSubmit={handleSubmit}>
 
-				<Form.Group as={Col} controlId="validationCustomEmail">
+				<Form.Group as={Col} controlId="validateCustomEmail">
 					<Form.Label>Email</Form.Label>
 					<Form.Control
 						required
-						type="text"
+						type="email"
+						name="email"
 						placeholder="Enter your email address"
 						defaultValue=""
 					/>
 					{/* <Form.Control.Feedback>You must enter your email address.</Form.Control.Feedback> */}
-					<Form.Control.Feedback type="invalid">You must enter your email address.</Form.Control.Feedback>
+					<Form.Control.Feedback type="invalid">You must enter a valid email address.</Form.Control.Feedback>
 				</Form.Group>
 				
-				<Form.Group className='mt-4' as={Col} controlId="validationCustomPassword">
+				<Form.Group className='mt-4' as={Col} controlId="validateCustomPassword">
 					<Form.Label>Password</Form.Label>
 					<InputGroup className="mb-3">
 						<Form.Control
 							required
+							name="password"
 							type={showPassword ? "text" : "password" }
 							placeholder="Enter your password"
 							aria-label="Password"
@@ -72,13 +74,13 @@ const Login = () => {
 					/> */}
 
 					<Form.Check type='checkbox' id='acceptTerms'>
-						<Form.Check.Input type='checkbox' feedbackType="invalid" />
+						<Form.Check.Input type='checkbox' feedbackType="invalid" required />
 						<Form.Check.Label>Accept Terms & Conditions</Form.Check.Label>
 					</Form.Check>
 				</Form.Group>
 				<Button variant='secondary' className='w-100 py-2 mb-4' type="submit">Login</Button>
 
-				<p className='text-center'>
+				<p className='text-center mb-0'>
 					<Form.Text id="noAccount" muted>
 						Don’t have an account? <Link to='/registration'>Register</Link>
 					</Form.Text>
