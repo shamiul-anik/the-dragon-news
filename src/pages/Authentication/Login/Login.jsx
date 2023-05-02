@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -6,21 +7,40 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../providers/AuthProvider';
 
 
 const Login = () => {
 
+	const { logIn } = useContext(AuthContext);
 	const [showPassword, setShowPassword] = useState(false);
-
 	const [validated, setValidated] = useState(false);
+	const [errorMessage, setErrorMessage] = useState("");
 
-	const handleSubmit = (event) => {
+	const handleLogIn = (event) => {
+		event.preventDefault();
 		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-		}
-		setValidated(true);
+		// const form = event.target;
+		// if (form.checkValidity() === false) {
+			// event.stopPropagation();
+			const email = form.email.value;
+			const password = form.password.value;
+			console.log(email, password);
+
+			
+
+			logIn(email, password)
+				.then((result) => {
+					const createdUser = result.user;
+					console.log(createdUser);
+					setErrorMessage("");
+				})
+				.catch((error) => {
+					setErrorMessage(error.message);
+				})
+		// }
+    // setValidated(true); // To show error message
+
 	};
 
 	return (
@@ -30,7 +50,9 @@ const Login = () => {
 
 			<hr className='text-secondary my-4' />
 
-			<Form noValidate validated={validated} onSubmit={handleSubmit}>
+			<Form noValidate validated={validated} onSubmit={handleLogIn}>
+
+				<p className='text-danger'> {errorMessage} </p>
 
 				<Form.Group as={Col} controlId="validateCustomEmail">
 					<Form.Label>Email</Form.Label>
@@ -56,6 +78,7 @@ const Login = () => {
 							aria-label="Password"
 							aria-describedby="password"
 							defaultValue=""
+							autoComplete="true"
 						/>
 						<InputGroup.Text className='p-0'>
 							<Button variant='outline-none' onClick={ () => setShowPassword(!showPassword) }>
@@ -73,10 +96,10 @@ const Login = () => {
 						feedbackType="invalid"
 					/> */}
 
-					<Form.Check type='checkbox' id='acceptTerms'>
-						<Form.Check.Input type='checkbox' feedbackType="invalid" required />
+					{/* <Form.Check type='checkbox' id='acceptTerms'>
+						<Form.Check.Input type='checkbox' required />
 						<Form.Check.Label>Accept Terms & Conditions</Form.Check.Label>
-					</Form.Check>
+					</Form.Check> */}
 				</Form.Group>
 				<Button variant='secondary' className='w-100 py-2 mb-4' type="submit">Login</Button>
 

@@ -6,7 +6,19 @@ import { AuthContext } from '../../../providers/AuthProvider';
 
 const HeaderNavbar = () => {
 
-  const { user } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
+
+  // console.log(user);
+
+  const handleLogOut = () => {
+    logOut()
+      .then((result) => {
+        console.log("hello", result);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      })
+  };
 
   return (
     <Container>
@@ -24,15 +36,16 @@ const HeaderNavbar = () => {
                 user &&
                 <>
                   <img src={UserIcon} alt="User Icon" />
-                  <div>{user.displayName}</div>
+                  <div>{user.email}</div>
+                  {/* <div>{user.displayName}</div> */}
                 </>
               }
 
               {
                 user ?
-                  <Button className='px-4 py-2' variant="danger">Logout</Button> :
+                  <Button onClick={handleLogOut} className='px-5 py-2' variant="danger">Logout</Button> :
                   <Link to='/login'>
-                    <Button className='px-4 py-2' variant="secondary">Login</Button>
+                    <Button className='px-5 py-2' variant="secondary">Login</Button>
                   </Link>
               }
             </Form>
