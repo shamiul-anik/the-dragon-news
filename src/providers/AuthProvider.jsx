@@ -10,22 +10,27 @@ const auth = getAuth(app);
 
 const AuthProvider = ({ children }) => {
 
+  // User Information
   const [user, setUser] = useState(null);
 
   // console.log(user);
 
+  // Create User with Email and Password
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   }
   
+  // Login with Email and Password
   const logIn = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   }
   
+  // Logout
   const logOut = () => {
     return signOut(auth);
   }
 
+  // Get Logged in Status and Set User if Logged in.
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (loggedInUser) => {
       setUser(loggedInUser);

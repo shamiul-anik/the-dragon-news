@@ -71,6 +71,11 @@ https://dragon-news-shamiul.netlify.app/
       <td>Lottie React</td>
       <td>https://www.npmjs.com/package/lottie-react</td>
     </tr>
+    <tr>
+      <td>9</td>
+      <td>React Toastify</td>
+      <td>https://www.npmjs.com/package/react-toastify</td>
+    </tr>
   </tbody>
 </table>
 

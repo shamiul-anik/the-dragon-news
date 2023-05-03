@@ -8,6 +8,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Registration = () => {
 
@@ -45,6 +46,7 @@ const Registration = () => {
         const createdUser = result.user;
         console.log(createdUser);
         setErrorMessage("");
+        toast.success("Registration successful!");
       })
       .catch((error) => {
         setErrorMessage(error.message);
@@ -113,6 +115,7 @@ const Registration = () => {
               aria-label="Password"
               aria-describedby="password"
               defaultValue=""
+              autoComplete="current-password"
             />
             <InputGroup.Text className='p-0'>
               <Button variant='outline-none' onClick={() => setShowPassword(!showPassword)}>

@@ -8,11 +8,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import { sendEmailVerification } from 'firebase/auth';
 
 
 const Login = () => {
 
-	const { logIn } = useContext(AuthContext);
+	const { auth, logIn } = useContext(AuthContext);
 	const [showPassword, setShowPassword] = useState(false);
 	const [validated, setValidated] = useState(false);
 	const [errorMessage, setErrorMessage] = useState("");
@@ -34,14 +35,22 @@ const Login = () => {
 					const createdUser = result.user;
 					console.log(createdUser);
 					setErrorMessage("");
+					// handleEmailVerification(createdUser);
 				})
 				.catch((error) => {
 					setErrorMessage(error.message);
-				})
+				});
 		// }
     // setValidated(true); // To show error message
 
 	};
+
+	// const handleEmailVerification = (user) => {
+	// 	sendEmailVerification(user)
+	// 		.then(() => {
+	// 			console.log("Email verification link sent. Please check your email to verify.");
+	// 		});
+	// };
 
 	return (
 		
@@ -78,7 +87,7 @@ const Login = () => {
 							aria-label="Password"
 							aria-describedby="password"
 							defaultValue=""
-							autoComplete="true"
+							autoComplete="current-password"
 						/>
 						<InputGroup.Text className='p-0'>
 							<Button variant='outline-none' onClick={ () => setShowPassword(!showPassword) }>
